@@ -43,10 +43,6 @@ app.use('/api/leads', leadRouter)
 var port = 80;
 if (process.env.NODE_ENV === 'production') {
     port = 8443;
-    app.get('/*', (req, res) => {
-        res.sendFile(path.join(__dirname, 'frontend', 'index.html'));
-    });
-
     const https = require('https');
     var https_options = {
         key: fs.readFileSync(path.join(__dirname, "dukanlist_com.key")),
