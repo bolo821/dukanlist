@@ -5,6 +5,7 @@ const unlinkAsync = promisify(fs.unlink)
 
 // Create new vendor
 exports.createNewVendor = async(req, res) => {
+    console.log('request arrived');
     try {
         const createdVendor = await Vendor.create(req.body)
         res.status(201).json({
@@ -13,6 +14,7 @@ exports.createNewVendor = async(req, res) => {
         })
 
     } catch(err) {
+        console.log('error: ', err);
         if(err.code === 11000)
             return res.status(500).json({
                 success: false,
