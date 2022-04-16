@@ -50,6 +50,7 @@ if (process.env.NODE_ENV === 'production') {
         ca: [
                 fs.readFileSync(path.join(__dirname, "TrustedRoot.crt")),
                 fs.readFileSync(path.join(__dirname, "DigiCertCA.crt")),
+                fs.readFileSync(path.join(__dirname, "My_CA_Bundle.crt")),
             ]
     };
 
