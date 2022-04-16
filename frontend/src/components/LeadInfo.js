@@ -62,14 +62,14 @@ const LeadInfo = props => {
   const sendOTP = async e => {
   e.preventDefault()
 
-  const { data: { Status, Details } } = await axios.get(`https://2factor.in/API/V1/862b88f0-324d-11ec-a13b-0200cd936042/SMS/${leadNumber}/AUTOGEN`)
+  const { data: { Status, Details } } = await axios.get(`https://2factor.in/API/V1/690d098f-364d-11ec-a13b-0200cd936042/SMS/${leadNumber}/AUTOGEN`)
   setOTPDetails({ Status, Details }) 
 }
 
   // Verify OTP
   const verifyOTP = async () => {
     try{
-      const { data: { Status, Details } } = await axios.get(`https://2factor.in/API/V1/862b88f0-324d-11ec-a13b-0200cd936042/SMS/VERIFY/${OTPDetails.Details}/${otp}`)
+      const { data: { Status, Details } } = await axios.get(`https://2factor.in/API/V1/690d098f-364d-11ec-a13b-0200cd936042/SMS/VERIFY/${OTPDetails.Details}/${otp}`)
       setOTPVerificationDetails({ Status, Details })
 
     } catch(err) {
