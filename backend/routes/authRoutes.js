@@ -40,6 +40,7 @@ router.post('/login', async(req, res) => {
             data: vendor
         })
     } catch(err) {
+        console.log('error: ', err);
         res.status(500).json({
             success: false,
             error: err.message
