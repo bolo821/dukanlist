@@ -48,7 +48,7 @@ if (process.env.NODE_ENV === 'production') {
         key: fs.readFileSync(path.join(__dirname, "dukanlist_com.key")),
         cert: fs.readFileSync(path.join(__dirname, "dukanlist_com.crt")),
         ca: [
-                fs.readFileSync(path.join(__dirname, "dukanlist_com.csr")),
+                fs.readFileSync(path.join(__dirname, "TrustedRoot.crt")),
                 fs.readFileSync(path.join(__dirname, "DigiCertCA.crt")),
             ]
     };
