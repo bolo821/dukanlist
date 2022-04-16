@@ -42,22 +42,18 @@ app.use('/api/leads', leadRouter)
 
 var port = 8080;
 if (process.env.NODE_ENV === 'production') {
-    port = 8443;
-    const https = require('https');
-    var https_options = {
-        key: fs.readFileSync(path.join(__dirname, "dukanlist_com.key")),
-        cert: fs.readFileSync(path.join(__dirname, "dukanlist_com.crt")),
-        ca: [
-                fs.readFileSync(path.join(__dirname, "TrustedRoot.crt")),
-                fs.readFileSync(path.join(__dirname, "DigiCertCA.crt")),
-            ]
-    };
+  port = 8443;
+  const https = require('https');
+  var https_options = {
+    key: fs.readFileSync(path.join(__dirname, "dukanlist_com.key")),
+    cert: fs.readFileSync(path.join(__dirname, "dukanlist_com.crt")),
+    ca: [
+          fs.readFileSync(path.join(__dirname, "TrustedRoot.crt")),
+          fs.readFileSync(path.join(__dirname, "DigiCertCA.crt")),
+        ]
+  };
 
-    const httpsServer = https.createServer(https_options, app);
-	options = {
-		cors: true,
-		origins: "*",
-	}
+  const httpsServer = https.createServer(https_options, app);
 
 	httpsServer.listen(port, () => {
 		console.log(`HTTPS Server running on port ${port}`);
@@ -65,10 +61,6 @@ if (process.env.NODE_ENV === 'production') {
 } else {
     const http = require('http');
     const server = http.createServer(app);
-    options = {
-      cors: true,
-      origins: "*",
-    }
     
     server.listen(port, () => {
       console.log(`HTTP Server is running on port ${port}`);
