@@ -48,11 +48,11 @@ if (process.env.NODE_ENV === 'production') {
 
     const https = require('https');
     var https_options = {
-        key: fs.readFileSync(path.join(__dirname, "sarahserver.xyz.key")),
+        key: fs.readFileSync(path.join(__dirname, "dukanlist_com.key")),
         cert: fs.readFileSync(path.join(__dirname, "dukanlist_com.crt")),
         ca: [
-                fs.readFileSync(path.join(__dirname, "sarahserver.xyz.csr")),
-                fs.readFileSync(path.join(__dirname, "sarahserver_xyzss.crt")),
+                fs.readFileSync(path.join(__dirname, "dukanlist_com.csr")),
+                fs.readFileSync(path.join(__dirname, "DigiCertCA.crt")),
             ]
     };
 
