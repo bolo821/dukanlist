@@ -40,7 +40,7 @@ app.use('/api/payment', packageRouter)
 app.use('/api/sendEmail', emailRouter)
 app.use('/api/leads', leadRouter)
 
-var port = 80;
+var port = 8082;
 if (process.env.NODE_ENV === 'production') {
     port = 8443;
     const https = require('https');
