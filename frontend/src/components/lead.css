@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body {
+    background-color: rgb(240, 240, 240);
+    font-family: 'Glory', sans-serif;
+
+}
+.rin::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="cols-"] {
+  float: left;
+  padding: 15px;
+}
+
+.header {
+  background-color: #3371cc;
+  color: #ffffff;
+  padding: 15px;
+}
+.header h1{
+    
+    color: #ffffff;
+    
+  }
+
+.menus ul {
+  list-style-type: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 900;
+  padding: 0;
+  margin: 5px;
+}
+
+.menus li {
+  padding: 8px;
+  margin-bottom: 7px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #494949;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.menus li:hover {
+  background-color: #ffffff;
+}
+
+.aside1 {
+  background-color: #4d6ded;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 800;
+  margin: 5px;
+  padding: 20px;
+  color: #494949;
+  text-align: left;
+  border-radius: 25px;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+
+h2 {
+  text-align: left;
+  padding: 0;
+}
+
+/* For desktop: */
+.cols-1 {
+  width: 8.33%;
+}
+.cols-2 {
+  width: 16.66%;
+}
+.cols-3 {
+  width: 25%;
+  padding: 0 20px;
+  margin-top: 15px;
+  font-size: 20px;
+  
+}
+.cols-4 {
+  width: 33.33%;
+}
+.cols-5 {
+  width: 41.66%;
+}
+.cols-6 {
+  width: 50%;
+  
+}
+.cols-6:hover {
+    box-shadow: 0 0 20px #0000002b;
+}
+.cols-7 {
+  width: 58.33%;
+}
+.cols-8 {
+  width: 66.66%;
+}
+.cols-9 {
+  width: 74%;
+  background-color: white;
+  margin-top: 10px;
+  margin-right: 12px;
+  border-radius: 10px;
+  float: right;
+}
+.cols-10 {
+  width: 83.33%;
+}
+.cols-11 {
+  width: 91.66%;
+}
+.cols-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  [class*="cols-"] {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.buttons {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 8px 30px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* Green */
+.success {
+  border-color: #04aa6d;
+  color: rgb(46, 46, 46);
+  border-radius: 20px;  
+  font-size: 15px;
+  background-color: rgba(255, 235, 205, 0);
+}
+.success:hover {
+    background: #f44336;
+    color: white;
+    
+  }
+
+.danger1 {
+  background-color: dodgerblue;
+  margin-left: 5px;
+  border-radius: 20px;
+  font-size: 15px;
+  border:unset;
+  border-color: none;
+  color: white;
+} 
+.danger1:hover {
+  background: #da190b;  
+}
+button:disabled {
+  color: #999 !important;
+  cursor: no-drop;
+}
+
+/* 
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+    
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .btn:hover, .dropdown:hover .btn {
+    background-color: #0b7dda;
+  } */
+
+  .btnn {
+      background-color: white;
+      padding: 5px;
+      margin: 18px;
+      border-radius: 5px;
+      border:unset;
+  }
+  .text{
+      text-align: left;
+  }
+.set {
+    float: left;
+}
+
+.post {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+}
+.offer {
+  position: relative;
+  text-align: center;
+}
+  /* BlueWeb SurFer */
+
+.offer_img {
+  width: 100%
+}

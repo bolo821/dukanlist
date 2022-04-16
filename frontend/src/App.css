@@ -1,0 +1,24 @@
+.modal-content {
+    background: #fff
+}
+.modalHeader-Title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vendorLoginInput {
+    margin: 0 !important
+}
+.vendorLoginInput::placeholder {
+    color: #555
+}
+.overlay {
+    overflow: hidden !important
+}
+.popup {
+    width:40% !important;
+    /* height: 50%; */
+}
+.form.js-upload {
+    height: 100%
+}

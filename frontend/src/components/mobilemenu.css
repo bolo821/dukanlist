@@ -1,0 +1,42 @@
+.mobile {
+  display: none;
+    overflow: hidden;
+    background-color: rgb(54, 121, 255);
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+  }
+  @media only screen and (max-width: 600px) {
+    .mobile {
+      display: block;
+      position: fixed;
+      background-color: rgba(54, 121, 255, 0.981);
+    }
+  }
+  
+  .mobile a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-decoration: none;
+    font-size: 17px;
+    width:25%;
+  }
+  
+  .mobile a:hover {
+    background: #3b51f8;
+    color: black;
+  }
+  
+  .mobile a.active {
+    background-color: #fdb2b2;
+    color: white;
+  }
+  
+  .main {
+    padding: 16px;
+    margin-bottom: 30px;
+  }

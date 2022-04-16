@@ -1,0 +1,664 @@
+.navbar {
+  font-size: 18px;
+  background-image: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  background-color: white;
+  padding: 8px;
+}
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+#chkToggle {
+  display: none;
+}
+
+#chkToggle:checked + ul.main-nav {
+  display: block;
+  background-color: #2b6da7;
+  z-index: 2;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #chkToggle:checked + ul.main-nav {
+    display: flex;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+/* .Hero-img {
+position: relative;
+
+
+}
+.Hero-img::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: green;
+  z-index: 10000
+
+} */
+
+.box {
+  display: flex;
+  position: relative;
+  background: #2196f3;
+  width: 100%;
+  overflow: hidden;
+}
+.box img {
+  width: 100%;
+  height: 400px !important;
+ 
+}
+@media (max-width: 480px) {
+  .box img {
+    height: 300px !important;
+  }
+}
+/* img {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+opacity: .2;
+object-fit: cover;
+object-position: center;
+height: 100%;
+
+} */
+.maintext {
+  position: relative;
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+  color: #263238;
+}
+
+.barra {
+  width: 100%;
+  position: relative;
+}
+.buscar {
+  float: left;
+  width: 100%;
+  border: 3px solid orange;
+  padding: 5px;
+  height: 40px;
+  border-radius: 25px;
+  outline: none;
+  color: #fa6a0a;
+}
+
+
+.wrap {
+  width: 50%;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width: 500px) {
+  .wrap {
+    width:90%;
+  }
+}
+.two-category {
+  height: 50px;
+}
+
+.test {
+  width: 100%;
+
+  background-size: cover;
+  position: relative;
+
+  background: linear-gradient(to top, #33ccff 0%, #ff99cc 100%);
+  border-radius: 1em;
+}
+
+.about {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: inline;
+  padding: 20px;
+  font-size: 20px;
+  color: #fff;
+  /* text-transform: uppercase; */
+  font-family: sans-serif;
+  width: 64%;
+  position: absolute;
+  top: 18%;
+  left: 16%;
+}
+
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+.search-wrapper select {
+  width: 700px !important;
+  height: 70px !important;
+  border-radius: 100px
+}
+@media (max-width: 480px) {
+  .search-wrapper {
+    top: 40px
+  }
+  .search-wrapper select {
+    width: 330px !important;
+    height:60px !important
+  }
+}
+
+.botton{
+  background-color: rgba(0, 0, 255, 0);
+  color: rgb(61, 61, 61);
+  margin-left: -72px;
+  padding-bottom: 5px;
+  padding:10px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+  font-size: 35px;
+  border: none;
+}
+
+.button-about {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+  border-radius: 2em;
+  margin-top: 17%;
+  margin-left: 73%;
+  margin-bottom: 3%;
+}
+
+.customHeader > * {
+  /* margin-right: 100px; */
+  position: initial;
+}
+.hero_text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 40px;
+  /* margin-top: -30px; */
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .hero_text {
+    font-size: 25px;
+    margin-top: 60px;
+  }
+}
+.headerNavbar {
+  width:95%;
+  height: 60px;
+  margin: auto;
+  border: none;
+  background-color: transparent !important;
+  z-index: 999
+}
+.brandLogo {
+  width:150px;
+  background-color: transparent;
+}
+.searchButton {
+  width: 55px;
+  height: 55px;
+  margin-left: -65px;
+  background-color: #25663e !important;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 0px !important;
+}
+.searchButton .searchIcon {
+  font-size: 20px !important;
+}
+@media (max-width: 480px) {
+  .headerNavbar  {
+    margin-top: -55px !important
+  }
+  .searchButton {
+    width: 45px;
+    height: 45px;
+    margin-left: -55px;
+    margin-right: 20px !important;
+  }
+}
+.navbar_menu {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  color: #666 !important;
+}
+.navbar_menu:not(:last-child) {
+  margin-right: 10px;
+}
+.navbar_menu i {
+  margin-right: 3px;
+}
+@media only screen and (max-width: 1530px) {
+  .button-about {
+    margin-bottom: 2%;
+    margin-top: 18%;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .button-about {
+    margin-bottom: 2%;
+    margin-top: 19%;
+  }
+}
+
+@media only screen and (max-width: 1370px) {
+  .button-about {
+    margin-bottom: 2%;
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (max-width: 1365px) {
+  .button-about {
+    margin-bottom: 2%;
+    margin-top: 24%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .about {
+    top: 9%;
+  }
+
+  .button-about {
+    margin-top: 23%;
+  }
+}
+
+@media only screen and (max-width: 1188px) {
+  .button-about {
+    margin-top: 26%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .button-about {
+    margin-left: 70%;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .button-about {
+    margin-top: 28%;
+  }
+}
+
+@media only screen and (max-width: 1045px) {
+  .button-about {
+    margin-top: 30%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .button-about {
+    margin-top: 32%;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .button-about {
+    margin-top: 34%;
+  }
+}
+
+@media only screen and (max-width: 919px) {
+  .button-about {
+    margin-top: 36%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .button-about {
+    margin-top: 38%;
+  }
+}
+
+@media only screen and (max-width: 858px) {
+  .button-about {
+    margin-top: 42%;
+  }
+}
+
+@media only screen and (max-width: 835px) {
+  .button-about {
+    margin-top: 44%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .button-about {
+    margin-left: 66%;
+    margin-top: 47%;
+  }
+}
+
+@media only screen and (max-width: 774px) {
+  .button-about {
+    margin-top: 52%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .button-about {
+    margin-top: 56%;
+  }
+}
+
+@media only screen and (max-width: 708px) {
+  .button-about {
+    margin-top: 60%;
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .button-about {
+    margin-top: 64%;
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .button-about {
+    margin-top: 68%;
+  }
+}
+
+@media only screen and (max-width: 627px) {
+  .button-about {
+    margin-top: 72%;
+    margin-left: 62%;
+  }
+}
+
+@media only screen and (max-width: 606px) {
+  .button-about {
+    margin-top: 76%;
+    font-size: 12px;
+    margin-left: 65%;
+  }
+}
+
+@media only screen and (max-width: 594px) {
+  .button-about {
+    margin-top: 80%;
+  }
+}
+
+@media only screen and (max-width: 583px) {
+  .button-about {
+    margin-top: 84%;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .button-about {
+    margin-top: 88%;
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  .button-about {
+    margin-top: 96%;
+  }
+}
+
+@media only screen and (max-width: 523px) {
+  .button-about {
+    margin-top: 100%;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .button-about {
+    margin-top: 107%;
+    margin-left: 62%;
+  }
+}
+
+@media only screen and (max-width: 492px) {
+  .button-about {
+    margin-top: 111%;
+  }
+}
+
+@media only screen and (max-width: 482px) {
+  .button-about {
+    margin-top: 122%;
+  }
+}
+
+@media only screen and (max-width: 466px) {
+  .button-about {
+    margin-top: 130%;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .about {
+    width: 74%;
+    left: 9%;
+  }
+  .button-about {
+    margin-top: 120%;
+  }
+}
+
+@media only screen and (max-width: 438px) {
+  .button-about {
+    margin-top: 127%;
+  }
+}
+
+@media only screen and (max-width: 417px) {
+  .button-about {
+    margin-top: 140%;
+  }
+}
+
+@media only screen and (max-width: 404px) {
+  .button-about {
+    margin-top: 150%;
+  }
+}
+
+@media only screen and (max-width: 389px) {
+  .button-about {
+    margin-top: 163%;
+  }
+}
+
+@media only screen and (max-width: 369px) {
+  .about {
+    width: 79%;
+    left: 5%;
+  }
+  .button-about {
+    margin-top: 170%;
+  }
+}
+
+@media only screen and (max-width: 354px) {
+  .button-about {
+    margin-top: 178%;
+  }
+}
+
+@media only screen and (max-width: 343px) {
+  .button-about {
+    margin-top: 190%;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .button-about {
+    margin-top: 200%;
+  }
+}
+
+@media only screen and (max-width: 326px) {
+  .button-about {
+    margin-top: 220%;
+    margin-left: 56%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .test2 p {
+    margin-top: 2.5%;
+  }
+}
+
+@media only screen and (max-width: 987px) {
+  .test2 p {
+    margin-top: 1.5%;
+  }
+}
+
+@media only screen and (max-width: 889px) {
+  .test2 p {
+    line-height: 5vh;
+  }
+}
+
+@media only screen and (max-width: 772px) {
+  .test2 p {
+    line-height: 3.6vh;
+    margin-top: 2.2%;
+  }
+}
+
+@media only screen and (max-width: 676px) {
+  .test2 p {
+    line-height: 3.2vh;
+    margin-top: 2.2%;
+  }
+}
+
+@media only screen and (max-width: 518px) {
+  .test2 p {
+    margin-right: 40%;
+    margin-top: 3.2%;
+  }
+}
+
+@media only screen and (max-width: 404px) {
+  .test2 p {
+    margin-left: 8%;
+  }
+}
+
+@media only screen and (max-width: 338px) {
+  .test2 p {
+    margin-right: 30%;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .test2 p {
+    margin-top: 3%;
+  }
+}

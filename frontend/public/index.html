@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicons.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <link  href="../Jquery/jquery.multiselect.css" rel="stylesheet"/>
+  <link  href="../Jquery/style.css" rel="stylesheet" />
+  <link  href="../Jquery/prettify.css" rel="stylesheet" />
+
+
+
+  <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+
+  <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin></script>
+
+  <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    var Alert = ReactBootstrap.Alert;
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+
+
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+
+
+  <!--  -->
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+
+  <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+  <!--ui kit  button dropdown-->
+  <link rel="stylesheet" href="https://getuikit.com/assets/uikit/dist/js/uikit.js?nc=7934">
+  <link rel="stylesheet" href="https://getuikit.com/assets/uikit/dist/js/uikit-icons.js?nc=7934">
+
+  <!-- head -->
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+  crossorigin="anonymous"
+/>
+
+
+<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&display=swap" rel="stylesheet">
+
+  <title>DukanList</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+  <!-- tab -->
+  
+  <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+
+  <script
+    src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+    crossorigin></script>
+  
+  <script
+    src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+    crossorigin></script>
+  
+  <script>var Alert = ReactBootstrap.Alert;</script>
+
+ 
+
+
+
+
+  <script>
+    function validate1(val) {
+      v1 = document.getElementById("fname");
+      v2 = document.getElementById("lname");
+      v3 = document.getElementById("email");
+      v4 = document.getElementById("mob");
+
+      flag1 = true;
+      flag2 = true;
+      flag3 = true;
+      flag4 = true;
+
+      if (val >= 1 || val == 0) {
+        if (v1.value == "") {
+          v1.style.borderColor = "red";
+          flag1 = false;
+        } else {
+          v1.style.borderColor = "green";
+          flag1 = true;
+        }
+      }
+
+      if (val >= 2 || val == 0) {
+        if (v2.value == "") {
+          v2.style.borderColor = "red";
+          flag2 = false;
+        } else {
+          v2.style.borderColor = "green";
+          flag2 = true;
+        }
+      }
+
+      if (val >= 3 || val == 0) {
+        if (v3.value == "") {
+          v3.style.borderColor = "red";
+          flag3 = false;
+        } else {
+          v3.style.borderColor = "green";
+          flag3 = true;
+        }
+      }
+
+      if (val >= 4 || val == 0) {
+        if (v4.value == "") {
+          v4.style.borderColor = "red";
+          flag4 = false;
+        } else {
+          v4.style.borderColor = "green";
+          flag4 = true;
+        }
+      }
+
+      flag = flag1 && flag2 && flag3 && flag4;
+
+      return flag;
+    }
+
+    function validate2(val) {
+      v3 = document.getElementById("title");
+      v4 = document.getElementById("desc");
+
+      flag3 = true;
+      flag4 = true;
+
+      if (val >= 3 || val == 0) {
+        if (v3.value == "") {
+          v3.style.borderColor = "red";
+          flag3 = false;
+        } else {
+          v3.style.borderColor = "green";
+          flag3 = true;
+        }
+      }
+
+      if (val >= 4 || val == 0) {
+        if (v4.value == "") {
+          v4.style.borderColor = "red";
+          flag4 = false;
+        } else {
+          v4.style.borderColor = "green";
+          flag4 = true;
+        }
+      }
+
+      flag = flag3 && flag4;
+
+      return flag;
+    }
+
+    $(document).ready(function () {
+
+      var current_fs, next_fs, previous_fs;
+
+      var steps = $(".card-body").length;
+      var current = 1;
+      setProgressBar(current);
+
+      $(".next").click(function () {
+
+        str1 = "next1";
+        str2 = "next2";
+        str3 = "next3";
+
+        if (!str2.localeCompare($(this).attr('id')) && validate1(0) == true) {
+          val2 = true;
+        } else {
+          val2 = false;
+        }
+
+        if (!str3.localeCompare($(this).attr('id')) && validate2(0) == true) {
+          val3 = true;
+        } else {
+          val3 = false;
+        }
+
+        if ((!str1.localeCompare($(this).attr('id'))) || (!str2.localeCompare($(this).attr('id')) && val2 ==
+            true) || (!str3.localeCompare($(this).attr('id')) && val3 == true)) {
+          current_fs = $(this).parent().parent();
+          next_fs = $(this).parent().parent().next();
+
+          $(current_fs).removeClass("show");
+          $(next_fs).addClass("show");
+
+          current_fs.animate({}, {
+            step: function () {
+
+              current_fs.css({
+                'display': 'none',
+                'position': 'relative'
+              });
+
+              next_fs.css({
+                'display': 'block'
+              });
+            }
+          });
+          setProgressBar(++current);
+          var c = document.getElementById('cnt').textContent;
+          document.getElementById('cnt').textContent = Number(c) + 25;
+        }
+      });
+
+      $(".prev").click(function () {
+
+        current_fs = $(this).parent().parent();
+        previous_fs = $(this).parent().parent().prev();
+
+        $(current_fs).removeClass("show");
+        $(previous_fs).addClass("show");
+
+        current_fs.animate({}, {
+          step: function () {
+
+            current_fs.css({
+              'display': 'none',
+              'position': 'relative'
+            });
+
+            previous_fs.css({
+              'display': 'block'
+            });
+          }
+        });
+        setProgressBar(--current);
+        var c = document.getElementById('cnt').textContent;
+        document.getElementById('cnt').textContent = Number(c) - 25;
+      });
+
+      function setProgressBar(curStep) {
+        var percent = parseFloat(100 / steps) * curStep;
+        percent = percent.toFixed();
+        $(".progress-bar").css("width", percent + "%");
+      }
+
+      $('.radio-group .radio').click(function () {
+        $('.selected .fa').removeClass('fa-check');
+        $('.selected .fa').addClass('fa-circle');
+        $('.radio').removeClass('selected');
+        $(this).addClass('selected');
+        $('.selected .fa').removeClass('fa-circle');
+        $('.selected .fa').addClass('fa-check');
+      });
+
+    });
+  </script>
+  <script>
+    /**
+     * @description Change Home page slider's arrows active status
+     */
+    function updateSliderArrowsStatus(
+      cardsContainer,
+      containerWidth,
+      cardCount,
+      cardWidth
+    ) {
+      if (
+        $(cardsContainer).scrollLeft() + containerWidth <
+        cardCount * cardWidth + 15
+      ) {
+        $("#slide-right-container").addClass("active");
+      } else {
+        $("#slide-right-container").removeClass("active");
+      }
+      if ($(cardsContainer).scrollLeft() > 0) {
+        $("#slide-left-container").addClass("active");
+      } else {
+        $("#slide-left-container").removeClass("active");
+      }
+    }
+    $(function () {
+      // Scroll products' slider left/right
+      let div = $("#cards-container");
+      let cardCount = $(div)
+        .find(".cards")
+        .children(".card").length;
+      let speed = 1000;
+      let containerWidth = $(".container").width();
+      let cardWidth = 250;
+
+      updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
+
+      //Remove scrollbars
+      $("#slide-right-container").click(function (e) {
+        if ($(div).scrollLeft() + containerWidth < cardCount * cardWidth) {
+          $(div).animate({
+            scrollLeft: $(div).scrollLeft() + cardWidth
+          }, {
+            duration: speed,
+            complete: function () {
+              setTimeout(
+                updateSliderArrowsStatus(
+                  div,
+                  containerWidth,
+                  cardCount,
+                  cardWidth
+                ),
+                1005
+              );
+            }
+          });
+        }
+        updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
+      });
+      $("#slide-left-container").click(function (e) {
+        if ($(div).scrollLeft() + containerWidth > containerWidth) {
+          $(div).animate({
+            scrollLeft: "-=" + cardWidth
+          }, {
+            duration: speed,
+            complete: function () {
+              setTimeout(
+                updateSliderArrowsStatus(
+                  div,
+                  containerWidth,
+                  cardCount,
+                  cardWidth
+                ),
+                1005
+              );
+            }
+          });
+        }
+        updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
+      });
+
+      // If resize action ocurred then update the container width value
+      $(window).resize(function () {
+        try {
+          containerWidth = $("#cards-container").width();
+          updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
+        } catch (error) {
+          console.log(
+            `Error occured while trying to get updated slider container width: 
+              ${error}`
+          );
+        }
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.navbar-light .dmenu').hover(function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+      }, function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+      });
+    });
+
+    $(document).ready(function () {
+      $(".megamenu").on("click", function (e) {
+        e.stopPropagation();
+      });
+    });
+  </script>
+
+
+<script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+
+<script
+  src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+  crossorigin></script>
+
+<script
+  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin></script>
+
+<script>var Alert = ReactBootstrap.Alert;</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+
+
+  <!--  -->
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on("click", function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
+        } // End if
+      });
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+<script  src="../Jquery/jquery.multiselect.js"></script>
+<script  src="../Jquery/prettify.js"></script>
+</html>

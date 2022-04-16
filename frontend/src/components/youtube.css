@@ -1,0 +1,43 @@
+.containers {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    padding-top: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 336px;
+    /* 1:1 Aspect Ratio */
+}
+
+.git_container {
+    margin: auto;
+    
+}
+.git_container img {
+    /* max-width: 1250px; */
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 80%; */
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    bottom: 0;
+    right: 10px;
+    width: 100%;
+    height: 80%;
+    border: none;
+}
+
+h2 {
+    font-size: 35px;
+  }
+
+
+  @media screen and (min-device-width: 480px) and (max-device-width: 768px) { 
+   .git_container img {
+       width: 100%;
+   }
+}

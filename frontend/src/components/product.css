@@ -1,0 +1,181 @@
+/* Esthetics styles */
+*{
+	box-sizing: border-box;
+}
+
+code{
+	background: silver;
+	padding: 0.25rem;
+	border-radius: 0.25rem;
+}
+
+/* form{
+	margin: 0 auto;
+	max-width: 50%;
+	border: 1px solid silver;
+	padding: 1rem;
+	border-radius: 0.25rem;
+} */
+/* label, input{
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+} */
+.flex{
+	display: flex;
+}
+.flex p{
+	flex: 1;
+	margin: 1rem 0.5rem;
+}
+.tab__content a{
+	/* color: white; */
+  color: #888;
+}
+.newcols h2 {
+  color: #555;
+}
+/*********************/
+.tabs{
+  display: flex;
+  list-style: none;
+  position: relative;
+	padding: 0;
+	
+}
+
+/* @media only screen and (max-width: 600px) {
+    .tabs {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+  } */
+.tab1{
+  flex: 1;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 0%;
+  background-color: white;
+  text-align: center;
+}
+
+.tab__link{
+  text-decoration: none;
+ font-size: 16px;
+  display: block;
+  /* background-color: dodgerblue; */
+  /* color: dodgerblue; */
+  padding: 0.25rem 0.25rem;
+  border-radius: 0.25rem 0.25rem  0 0;
+}
+.tab1:not(:last-child) .tab__link{
+  border-right: 1px solid white;
+          
+}
+.tab__content{
+  /* background: rgb(118, 127, 255); */
+  background: #fff;
+  padding: 1rem;
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  /* color: white; */
+  color: #333 !important;
+  opacity: 0;
+  pointer-events: none;
+  min-height: fit-content;
+  width: 100%;
+  box-shadow: 1px 6px 20px #0000007b;
+
+  font-family: 'Nunito', sans-serif !important;
+  font-weight: 600
+}
+
+.tab__content h2 {
+    /* color: white; */
+    font-family: 'Nunito', sans-serif !important;
+    color: #777;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.tab__content h3 {
+  color: white;
+  font-size: 16px;
+}
+/* .tab1:focus-within .tab__link{
+  background: rgb(116, 172, 255);  
+} */
+.tab1:focus-within .tab__content{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+/* Donate layer */
+.donate{
+	position: fixed;
+	bottom: 0.25rem;
+	right: 0.25rem; 
+	border-radius: 0.5rem;
+	background-color: whitesmoke;
+	padding: 0 1rem;
+	font-weight: bold;
+	color: dimgray;
+}
+.donate a{
+	text-decoration: none;
+	color: orangered;
+	border-bottom: 2px solid transparent;
+	transition: 0.35s;
+}
+.donate a:hover{
+	border-bottom-color: orangered;
+}
+
+/*  */
+
+.newcols {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: fit-content; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .newcols {
+    width: 100%;
+  }
+}
+
+.responsive {
+  width: 100%;
+  object-fit: cover;
+  height: 700px;
+  
+}
+
+.category_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Nunito', sans-serif !important;
+  font-weight: 700;
+  color: #777;
+}
+.category_section:hover {
+  color: #777 !important;
+}
+.category_icon {
+  height: 60px;
+  background: #fff;
+  margin-bottom: 8px !important;
+}

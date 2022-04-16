@@ -1,0 +1,71 @@
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column
+}
+.remove-top-margin {
+    margin-top: 0;
+}
+.logo {
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 180px;
+}
+
+.logo-placeholder {
+    padding: 5px;
+    text-align: center;
+}
+
+.verificationScreen_container {
+    padding: 0 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height:400px; 
+
+    /* background-image: url('../images/verificationPage.jpg');
+    background-size: cover;
+    background-position: center */
+}
+
+.button4 {
+    background-color: #0097FF; 
+    border: none;
+    color: white;
+    padding-top:12px;
+    padding-bottom:12px;
+    padding-left:30px;
+    padding-right:30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 24px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 20%;
+    margin-left: 5%;
+  }
+
+  .days{
+      color: #FFB600;
+  }
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .counter {
+        width: 450px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .counter {
+        width: 350px;
+    }
+
+}

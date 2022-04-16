@@ -1,0 +1,33 @@
+.test1 {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    background-attachment: fixed;
+    /* background-size: cover; */
+    position: relative;
+    background-size: cover;
+    background-image: url("https://cdn-res.keymedia.com/cms/images/us/037/0292_637595469743067605.jpg");
+  /* background: linear-gradient(to top, #33ccff 0%, #ff99cc 100%); */
+  
+}
+
+.about1 {
+    background-color: rgba(0, 0, 0, 0.563);
+    color: #fff;     
+    padding: 20px;
+    font-size: 18px;
+    color: #fff;
+    font-family: sans-serif;
+    width: 64%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+
+@media only screen and (max-width: 600px) {
+  .about1 {
+    width: 100%;
+  }
+}
